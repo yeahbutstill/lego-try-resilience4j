@@ -1,10 +1,10 @@
-package com.yeahbutstill.tryresilience4J;
+package com.yeahbutstill.tryingresilience4j;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Tryresilience4JApplicationTests {
+class Tryingresilience4jApplicationTests {
 
 	@Test
 	void contextLoads() {
