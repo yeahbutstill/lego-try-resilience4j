@@ -29,6 +29,9 @@ class BulkHeadTest {
 
         Bulkhead bulkhead = Bulkhead.ofDefaults("yeahbutstill");
 
+        bulkhead.getMetrics().getAvailableConcurrentCalls();
+        bulkhead.getMetrics().getMaxAllowedConcurrentCalls();
+
         for (int i = 0; i < 1_000; i++) {
             Runnable runnable = Bulkhead.decorateRunnable(bulkhead, () -> slow());
             new Thread(runnable).start();
